@@ -77,6 +77,7 @@ public class CatDragAndDrop : MonoBehaviour
         // {
         //     transform.position = startDragPosition; // return to start if no drop area
         // }
+        col.enabled = true;
 
     }
 
