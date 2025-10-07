@@ -5,16 +5,21 @@ public class CatDragAndDrop : MonoBehaviour
 
     private Collider2D col;
     private Vector3 startDragPosition;
+    private CatHappiness catHappinessRef;
+
+    public bool dragging = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        catHappinessRef = GetComponent<CatHappiness>();
         col = GetComponent<Collider2D>();
     }
 
 
     private void OnMouseDown()
     {
+        dragging = true;
         startDragPosition = transform.position;
         transform.position = GetMousePositionInWorldSpace();
     }
@@ -26,6 +31,9 @@ public class CatDragAndDrop : MonoBehaviour
 
     private void OnMouseUp()
     {
+        catHappinessRef.CheckIfAllLikesAreSatisfied();
+        dragging = false;
+        
         // col.enabled = false;
         // Collider2D hitCollider = Physics2D.OverlapPoint(transform.position);
         // col.enabled = true;
@@ -38,46 +46,46 @@ public class CatDragAndDrop : MonoBehaviour
         //     transform.position = startDragPosition;
         // }
         // -------------------------------------
-        // col.enabled = false;
-        // // Collider2D hitCollider = Physics2D.OverlapPoint(transform.position);
-        // Collider2D hitCollider = Physics2D.OverlapPoint(GetMousePositionInWorldSpace());
+        col.enabled = false;
+        // Collider2D hitCollider = Physics2D.OverlapPoint(transform.position);
+        Collider2D hitCollider = Physics2D.OverlapPoint(GetMousePositionInWorldSpace());
+
+        col.enabled = true;
+
+        if (hitCollider != null && hitCollider.TryGetComponent(out ICatDropArea catDropArea))
+        {
+            // pass the exact mouse position where drop happened
+            catDropArea.OnCatDrop(this, GetMousePositionInWorldSpace());
+        }
+        else
+        {
+            transform.position = startDragPosition;
+        }
+        // --------------------------
+        // col.enabled = false; 
+        // Collider2D[] results = new Collider2D[10]; // array to hold possible hits
+        // ContactFilter2D filter = new ContactFilter2D();
+        // filter.NoFilter(); // detect all layers
+        // int count = col.Overlap(filter, results); // check everything overlapping cat
 
         // col.enabled = true;
 
-        // if (hitCollider != null && hitCollider.TryGetComponent(out ICatDropArea catDropArea))
+        // bool dropped = false;
+        // for (int i = 0; i < count; i++)
         // {
-        //     // pass the exact mouse position where drop happened
-        //     catDropArea.OnCatDrop(this, GetMousePositionInWorldSpace());
+        //     if (results[i].TryGetComponent(out ICatDropArea catDropArea))
+        //     {
+        //         catDropArea.OnCatDrop(this, GetMousePositionInWorldSpace());
+        //         dropped = true;
+        //         break;
+        //     }
         // }
-        // else
+
+        // if (!dropped)
         // {
-        //     transform.position = startDragPosition;
+        //     transform.position = startDragPosition; // return to start if no drop area
         // }
-        // --------------------------
-        col.enabled = false; 
-        Collider2D[] results = new Collider2D[10]; // array to hold possible hits
-        ContactFilter2D filter = new ContactFilter2D();
-        filter.NoFilter(); // detect all layers
-        int count = col.Overlap(filter, results); // check everything overlapping cat
-
-        col.enabled = true;
-
-        bool dropped = false;
-        for (int i = 0; i < count; i++)
-        {
-            if (results[i].TryGetComponent(out ICatDropArea catDropArea))
-            {
-                catDropArea.OnCatDrop(this, GetMousePositionInWorldSpace());
-                dropped = true;
-                break;
-            }
-        }
-
-        if (!dropped)
-        {
-            transform.position = startDragPosition; // return to start if no drop area
-        }
-        col.enabled = true;
+        // col.enabled = true;
 
     }
 
