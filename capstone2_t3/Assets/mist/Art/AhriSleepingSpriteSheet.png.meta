@@ -1,0 +1,343 @@
+fileFormatVersion: 2
+guid: 6d94c2341965c42418161e7435d81251
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2828127070882019599
+    second: AhriSleepingSpriteSheet_0
+  - first:
+      213: -3768788570076117139
+    second: AhriSleepingSpriteSheet_1
+  - first:
+      213: -1039522888593818865
+    second: AhriSleepingSpriteSheet_2
+  - first:
+      213: 286572169233910313
+    second: AhriSleepingSpriteSheet_3
+  - first:
+      213: -7880313613452441983
+    second: AhriSleepingSpriteSheet_4
+  - first:
+      213: -1014573969012754255
+    second: AhriSleepingSpriteSheet_5
+  - first:
+      213: 2552809742185812179
+    second: AhriSleepingSpriteSheet_6
+  - first:
+      213: 965692557025467425
+    second: AhriSleepingSpriteSheet_7
+  - first:
+      213: 1259525266136427004
+    second: AhriSleepingSpriteSheet_8
+  - first:
+      213: 1081422749283963732
+    second: AhriSleepingSpriteSheet_9
+  - first:
+      213: 1519084323141691731
+    second: AhriSleepingSpriteSheet_10
+  - first:
+      213: 490655735338075183
+    second: AhriSleepingSpriteSheet_11
+  - first:
+      213: -1756968687694399153
+    second: AhriSleepingSpriteSheet_12
+  - first:
+      213: -8409471564398623018
+    second: AhriSleepingSpriteSheet_13
+  - first:
+      213: 7396835415617561092
+    second: AhriSleepingSpriteSheet_14
+  - first:
+      213: -5196358628630725416
+    second: AhriSleepingSpriteSheet_15
+  - first:
+      213: 558269003419306880
+    second: AhriSleepingSpriteSheet_16
+  - first:
+      213: 6160763742765218545
+    second: AhriSleepingSpriteSheet_17
+  - first:
+      213: 4927172883818317113
+    second: AhriSleepingSpriteSheet_18
+  - first:
+      213: 9015877960546840766
+    second: AhriSleepingSpriteSheet_19
+  - first:
+      213: -5523187862665980232
+    second: AhriSleepingSpriteSheet_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AhriSleepingSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 720
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f09b69f36968f3720800000000000000
+      internalID: 2828127070882019599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AhriSleepingSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 720
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d678f0f63c292bbc0800000000000000
+      internalID: -3768788570076117139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AhriSleepingSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 720
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0b3a71c07fd291f0800000000000000
+      internalID: -1039522888593818865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AhriSleepingSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 0
+        width: 720
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a43bd9edb1af300800000000000000
+      internalID: 286572169233910313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AhriSleepingSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 0
+        width: 720
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1860e7f258083a290800000000000000
+      internalID: -7880313613452441983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AhriSleepingSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 0
+        width: 720
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b8f2a2c9528be1f0800000000000000
+      internalID: -1014573969012754255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AhriSleepingSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 0
+        width: 720
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d054266fe66d6320800000000000000
+      internalID: 2552809742185812179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1c148a73277a7a344ae479925acd97ea
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":1.0},"gridSpriteSize":{"x":720.0,"y":720.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      AhriSleepingSpriteSheet_0: 2828127070882019599
+      AhriSleepingSpriteSheet_1: -3768788570076117139
+      AhriSleepingSpriteSheet_2: -1039522888593818865
+      AhriSleepingSpriteSheet_3: 286572169233910313
+      AhriSleepingSpriteSheet_4: -7880313613452441983
+      AhriSleepingSpriteSheet_5: -1014573969012754255
+      AhriSleepingSpriteSheet_6: 2552809742185812179
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
