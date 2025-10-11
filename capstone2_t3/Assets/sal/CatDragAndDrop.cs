@@ -8,6 +8,7 @@ public class CatDragAndDrop : MonoBehaviour
     public GameManager gameManagerRef;
 
     public bool dragging = false;
+    private Collider2D lastHoveredCat = null;
 
     void Start()
     {
@@ -25,53 +26,40 @@ public class CatDragAndDrop : MonoBehaviour
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        // Pick up the cat
+        // PICK UP
         if (Input.GetMouseButtonDown(0))
         {
-            int catLayer = LayerMask.GetMask("Cat");
-            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero, 0f, catLayer);
-
-            if (hit.collider != null && hit.collider.gameObject == this.gameObject)
+            Collider2D[] hits = Physics2D.OverlapPointAll(mousePos);
+            foreach (var hit in hits)
             {
-                dragging = true;
-                startDragPosition = transform.position;
-
-                Debug.Log("Picked up cat: " + this.gameObject.name);
-
-                // if (gameManagerRef != null)
-                // {
-                //     gameManagerRef.currentlySelectedCat = this.gameObject;
-                //     gameManagerRef.UpdateCatLikesGUI();
-                // }
-            }
-        }
-        if (Input.GetMouseButton(0))
-        {
-            int catLayer = LayerMask.GetMask("Cat");
-            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero, 0f, catLayer);
-
-            if (hit.collider != null && hit.collider.gameObject == this.gameObject)
-            {
-                if (gameManagerRef != null)
+                if (hit.CompareTag("Cat") && hit.gameObject == this.gameObject)
                 {
-                    gameManagerRef.currentlySelectedCat = this.gameObject;
-                    gameManagerRef.UpdateCatLikesGUI();
+                    dragging = true;
+                    startDragPosition = transform.position;
+
+                    Debug.Log("Picked up cat: " + this.gameObject.name);
+
+                    if (gameManagerRef != null)
+                    {
+                        gameManagerRef.currentlySelectedCat = this.gameObject;
+                        gameManagerRef.UpdateCatLikesGUI();
+                    }
+                    break;
                 }
             }
         }
 
-        // Dragging
+        // DRAGGING
         if (dragging && Input.GetMouseButton(0))
         {
             transform.position = mousePos;
         }
 
-        // Drop the cat
+        // DROP
         if (dragging && Input.GetMouseButtonUp(0))
         {
             dragging = false;
 
-            // Check drop areas
             int dropAreaLayer = LayerMask.GetMask("DropArea");
             Collider2D hitCollider = Physics2D.OverlapPoint(mousePos, dropAreaLayer);
 
@@ -81,57 +69,60 @@ public class CatDragAndDrop : MonoBehaviour
             }
             else
             {
-                // No drop area, return to start
                 transform.position = startDragPosition;
             }
 
-            // Check likes
             catHappinessRef.CheckIfAllLikesAreSatisfied();
         }
+
+        // HOVER TRACKING (works even when dragging or dropped)
+        UpdateHoveredCat(mousePos);
     }
 
-    private void OnMouseEnter()
+    private void UpdateHoveredCat(Vector2 mousePos)
     {
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Collider2D[] hits = Physics2D.OverlapPointAll(mousePos);
+        Collider2D hoveredCat = null;
 
-        // Get all colliders under the mouse
-        Collider2D[] colliders = Physics2D.OverlapPointAll(mousePos);
-
-        foreach (Collider2D c in colliders)
+        foreach (var hit in hits)
         {
-            if (c.CompareTag("Cat"))
+            if (hit.CompareTag("Cat"))
             {
-                Debug.Log("Hovering over cat: " + c.gameObject.name);
+                hoveredCat = hit;
+                break; // only first cat
+            }
+        }
 
-                // if (gameManagerRef != null)
-                // {
-                //     gameManagerRef.currentlySelectedCat = c.gameObject;
-                //     gameManagerRef.UpdateCatLikesGUI();
+        if (hoveredCat != lastHoveredCat)
+        {
+            // Clear previous highlight
+            if (lastHoveredCat != null && lastHoveredCat.TryGetComponent<SpriteRenderer>(out var sr1))
+            {
+                sr1.color = Color.white;
+            }
 
-                //     // Optional: highlight
-                //     c.GetComponent<SpriteRenderer>().color = Color.green;
-                // }
+            lastHoveredCat = hoveredCat;
+
+            // Highlight new cat and update selection
+            if (hoveredCat != null)
+            {
+                if (hoveredCat.TryGetComponent<SpriteRenderer>(out var sr2))
+                    sr2.color = Color.green;
+
+                if (!dragging && gameManagerRef != null)
+                {
+                    gameManagerRef.currentlySelectedCat = hoveredCat.gameObject;
+                    gameManagerRef.UpdateCatLikesGUI();
+                }
+            }
+            else
+            {
+                if (!dragging && gameManagerRef != null)
+                {
+                    gameManagerRef.currentlySelectedCat = null;
+                    gameManagerRef.UpdateCatLikesGUI();
+                }
             }
         }
     }
-
-    private void OnMouseExit()
-    {
-        // Only clear selection if we are not dragging this cat
-        // if (!dragging)
-        // {
-        //     if (gameManagerRef != null)
-        //     {
-        //         gameManagerRef.currentlySelectedCat = null;
-        //         gameManagerRef.UpdateCatLikesGUI();
-        //     }
-        // }
-    }
-
-    // public Vector3 GetMousePositionInWorldSpace()
-    // {
-    //     Vector3 p = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-    //     p.z = 0f;
-    //     return p;
-    // }
 }

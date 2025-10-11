@@ -31,9 +31,4 @@ public class CatLike : ScriptableObject
         Debug.Log("No food nearby.");
         return false;
     }
-
-    // public Sprite GetLikeIcon()
-    // {
-    //     return catImage;
-    // }
 }
