@@ -6,6 +6,8 @@ public class CatHappiness : MonoBehaviour
 
     CatDragAndDrop catDragAndDropRef;
 
+    bool catSatisfied = false;
+
     void Start()
     {
         catDragAndDropRef = GetComponent<CatDragAndDrop>();
@@ -20,9 +22,24 @@ public class CatHappiness : MonoBehaviour
         //         like.IsLikeSatisfied(this.gameObject);
         //     }
         // }
+        bool allSatisfied = true;
+
         foreach(CatLike like in catLikes)
         {
-            like.IsLikeSatisfied(this.gameObject);
+            if(like.IsLikeSatisfied(this.gameObject))
+            {
+                allSatisfied = false;
+                break;
+            }
+        }
+
+        if(allSatisfied==true)
+        {
+            catSatisfied = true;
+        }
+        else if(allSatisfied==false)
+        {
+            catSatisfied = false;
         }
     }
 }

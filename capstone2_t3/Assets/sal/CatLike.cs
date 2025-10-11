@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "New Like", menuName = "Cat/Like")]
 public class CatLike : ScriptableObject
@@ -31,4 +31,9 @@ public class CatLike : ScriptableObject
         Debug.Log("No food nearby.");
         return false;
     }
+
+    // public Sprite GetLikeIcon()
+    // {
+    //     return catImage;
+    // }
 }
