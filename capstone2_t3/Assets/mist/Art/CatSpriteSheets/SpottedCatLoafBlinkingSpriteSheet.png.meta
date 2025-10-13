@@ -1,0 +1,299 @@
+fileFormatVersion: 2
+guid: a62d7a782ce23da4eab2c74ac210e8f8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8899332712261506217
+    second: SpottedCatLoafBlinkingSpriteSheet_0
+  - first:
+      213: 6663381009333047210
+    second: SpottedCatLoafBlinkingSpriteSheet_1
+  - first:
+      213: 5756721911864012807
+    second: SpottedCatLoafBlinkingSpriteSheet_2
+  - first:
+      213: 8692198668795084826
+    second: SpottedCatLoafBlinkingSpriteSheet_3
+  - first:
+      213: -7456733668512052231
+    second: SpottedCatLoafBlinkingSpriteSheet_4
+  - first:
+      213: 70711149449598489
+    second: SpottedCatLoafBlinkingSpriteSheet_5
+  - first:
+      213: -5909736804974092000
+    second: SpottedCatLoafBlinkingSpriteSheet_6
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpottedCatLoafBlinkingSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 66
+        width: 366
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a45c5c73f7c08b70800000000000000
+      internalID: 8899332712261506217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpottedCatLoafBlinkingSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 66
+        width: 365
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf416059b5197c50800000000000000
+      internalID: 6663381009333047210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpottedCatLoafBlinkingSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 66
+        width: 365
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 700bc53141cf3ef40800000000000000
+      internalID: 5756721911864012807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpottedCatLoafBlinkingSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 66
+        width: 367
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1087a2d2a4e0a870800000000000000
+      internalID: 8692198668795084826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpottedCatLoafBlinkingSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 66
+        width: 365
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fbc4a76c3c548890800000000000000
+      internalID: -7456733668512052231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpottedCatLoafBlinkingSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 2097
+        y: 66
+        width: 365
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9165a907a673bf000800000000000000
+      internalID: 70711149449598489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpottedCatLoafBlinkingSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 2508
+        y: 72
+        width: 366
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021a77fdfa56cfda0800000000000000
+      internalID: -5909736804974092000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SpottedCatLoafBlinkingSpriteSheet_0: 8899332712261506217
+      SpottedCatLoafBlinkingSpriteSheet_1: 6663381009333047210
+      SpottedCatLoafBlinkingSpriteSheet_2: 5756721911864012807
+      SpottedCatLoafBlinkingSpriteSheet_3: 8692198668795084826
+      SpottedCatLoafBlinkingSpriteSheet_4: -7456733668512052231
+      SpottedCatLoafBlinkingSpriteSheet_5: 70711149449598489
+      SpottedCatLoafBlinkingSpriteSheet_6: -5909736804974092000
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

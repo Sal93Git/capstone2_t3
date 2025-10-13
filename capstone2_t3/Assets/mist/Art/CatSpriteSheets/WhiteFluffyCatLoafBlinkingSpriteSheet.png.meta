@@ -1,0 +1,299 @@
+fileFormatVersion: 2
+guid: b957bb2c9e3cb9a439b548559c5dc8ad
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 770790335407526312
+    second: WhiteFluffyCatLoafBlinkingSpriteSheet_0
+  - first:
+      213: 8720778422968299669
+    second: WhiteFluffyCatLoafBlinkingSpriteSheet_1
+  - first:
+      213: 1931577909291408283
+    second: WhiteFluffyCatLoafBlinkingSpriteSheet_2
+  - first:
+      213: 6645924610075187780
+    second: WhiteFluffyCatLoafBlinkingSpriteSheet_3
+  - first:
+      213: 7959820921972839934
+    second: WhiteFluffyCatLoafBlinkingSpriteSheet_4
+  - first:
+      213: -2305258282050954956
+    second: WhiteFluffyCatLoafBlinkingSpriteSheet_5
+  - first:
+      213: -3205287829117836645
+    second: WhiteFluffyCatLoafBlinkingSpriteSheet_6
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WhiteFluffyCatLoafBlinkingSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 66
+        width: 366
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a1154ae9b562ba00800000000000000
+      internalID: 770790335407526312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteFluffyCatLoafBlinkingSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 66
+        width: 366
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 590bae165cd660970800000000000000
+      internalID: 8720778422968299669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteFluffyCatLoafBlinkingSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 64
+        width: 366
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9b5e43efd75eca10800000000000000
+      internalID: 1931577909291408283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteFluffyCatLoafBlinkingSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 56
+        width: 366
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ade83a8311b3c50800000000000000
+      internalID: 6645924610075187780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteFluffyCatLoafBlinkingSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 66
+        width: 366
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5d9e1a4f6f67e60800000000000000
+      internalID: 7959820921972839934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteFluffyCatLoafBlinkingSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 2097
+        y: 66
+        width: 366
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43953d66ec31200e0800000000000000
+      internalID: -2305258282050954956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteFluffyCatLoafBlinkingSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 2511
+        y: 72
+        width: 366
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b926c86a3b78483d0800000000000000
+      internalID: -3205287829117836645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9adf4e1e96eb85941a317bebd6cb0cfe
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WhiteFluffyCatLoafBlinkingSpriteSheet_0: 770790335407526312
+      WhiteFluffyCatLoafBlinkingSpriteSheet_1: 8720778422968299669
+      WhiteFluffyCatLoafBlinkingSpriteSheet_2: 1931577909291408283
+      WhiteFluffyCatLoafBlinkingSpriteSheet_3: 6645924610075187780
+      WhiteFluffyCatLoafBlinkingSpriteSheet_4: 7959820921972839934
+      WhiteFluffyCatLoafBlinkingSpriteSheet_5: -2305258282050954956
+      WhiteFluffyCatLoafBlinkingSpriteSheet_6: -3205287829117836645
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
