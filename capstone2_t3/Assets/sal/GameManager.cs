@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour
 
     public Sprite emptyIcon;
 
+    public Sprite happyCheck;
+    public Sprite unhappyCheck;
+
     void Start()
     {
         // Disable all cat like icons and clear text at scene start
@@ -22,6 +25,9 @@ public class GameManager : MonoBehaviour
             {
                 catLikeIcons[i].enabled = false;
                 ClearText(catLikeIcons[i]);
+                Transform checkBoxRef = catLikeIcons[i].transform.GetChild(0);
+                Image checkBoxImage = checkBoxRef.GetComponent<Image>();
+                checkBoxImage.sprite = emptyIcon;
             }
         }
     }
@@ -59,6 +65,17 @@ public class GameManager : MonoBehaviour
                             {
                                 textComponent.text = like.likeTag;
                             }
+
+                            Transform checkBoxRef = catLikeIcons[i].transform.GetChild(0);
+                            Image checkBoxImage = checkBoxRef.GetComponent<Image>();
+                            if (like.IsLikeSatisfied(currentlySelectedCat))
+                            {
+                                checkBoxImage.sprite = happyCheck;
+                            }
+                            else
+                            {
+                                checkBoxImage.sprite = unhappyCheck;
+                            }
                         }
                     }
                     else
@@ -66,6 +83,9 @@ public class GameManager : MonoBehaviour
                         // Disable image when no like
                         catLikeIcons[i].enabled = false;
                         ClearText(catLikeIcons[i]);
+                        Transform checkBoxRef = catLikeIcons[i].transform.GetChild(0);
+                        Image checkBoxImage = checkBoxRef.GetComponent<Image>();
+                        checkBoxImage.sprite = emptyIcon;
                     }
                 }
                 else
@@ -73,6 +93,9 @@ public class GameManager : MonoBehaviour
                     // Disable image if out of range
                     catLikeIcons[i].enabled = false;
                     ClearText(catLikeIcons[i]);
+                    Transform checkBoxRef = catLikeIcons[i].transform.GetChild(0);
+                    Image checkBoxImage = checkBoxRef.GetComponent<Image>();
+                    checkBoxImage.sprite = emptyIcon;
                 }
             }
             else
@@ -80,6 +103,9 @@ public class GameManager : MonoBehaviour
                 // No cat selected, disable all
                 catLikeIcons[i].enabled = false;
                 ClearText(catLikeIcons[i]);
+                Transform checkBoxRef = catLikeIcons[i].transform.GetChild(0);
+                Image checkBoxImage = checkBoxRef.GetComponent<Image>();
+                checkBoxImage.sprite = emptyIcon;
             }
         }
     }

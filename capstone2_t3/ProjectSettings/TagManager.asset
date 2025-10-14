@@ -9,6 +9,7 @@ TagManager:
   - Water
   - Human
   - Shade
+  - UnplacedCat
   layers:
   - Default
   - TransparentFX
