@@ -4,7 +4,16 @@ public class CatHappiness : MonoBehaviour
 {
     public CatLike[] catLikes;
 
-    CatDragAndDrop catDragAndDropRef;
+    private CatDragAndDrop catDragAndDropRef;
+
+    private bool catSatisfied = false;
+    private bool partiallySatisfied = false;
+
+    public GameObject catPlumbob;
+
+    public Sprite happyPlumbob;
+    public Sprite neutralPlumbob;
+    public Sprite unhappyPlumbob;
 
     void Start()
     {
@@ -13,16 +22,46 @@ public class CatHappiness : MonoBehaviour
 
     public void CheckIfAllLikesAreSatisfied()
     {
-        // if(catDragAndDropRef.dragging)
-        // {
-        //     foreach(CatLike like in catLikes)
-        //     {
-        //         like.IsLikeSatisfied(this.gameObject);
-        //     }
-        // }
-        foreach(CatLike like in catLikes)
+        bool allSatisfied = true;
+        partiallySatisfied = false;
+
+        foreach (CatLike like in catLikes)
         {
-            like.IsLikeSatisfied(this.gameObject);
+            if (!like.IsLikeSatisfied(this.gameObject))
+            {
+                allSatisfied = false;
+            }
+            else
+            {
+                partiallySatisfied = true;
+            }
+        }
+
+        // Make sure the plumbob is visible
+        if (catPlumbob != null && !catPlumbob.activeSelf)
+            catPlumbob.SetActive(true);
+
+        var sr = catPlumbob.GetComponent<SpriteRenderer>();
+        if (sr == null)
+        {
+            Debug.LogWarning("Cat Plumbob has no SpriteRenderer!");
+            return;
+        }
+
+        if (allSatisfied)
+        {
+            catSatisfied = true;
+            sr.sprite = happyPlumbob;
+        }
+        else if (partiallySatisfied)
+        {
+            catSatisfied = false;
+            sr.sprite = neutralPlumbob;
+        }
+        else
+        {
+            catSatisfied = false;
+            sr.sprite = unhappyPlumbob;
         }
     }
 }

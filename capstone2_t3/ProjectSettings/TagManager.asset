@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 3
   tags:
   - Food
+  - Cat
+  - Water
+  - Human
+  - Shade
+  - UnplacedCat
   layers:
   - Default
   - TransparentFX
@@ -12,8 +17,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Cat
+  - DropArea
   - 
   - 
   - 
