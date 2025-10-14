@@ -4,134 +4,96 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-
     public GameObject[] inLevelCats;
-    public Image [] catLikeIcons;
+    public Image[] catLikeIcons;
     public GameObject currentlySelectedCat;
 
     public Transform checkBoxRef;
     public Transform textRef;
 
     public Sprite emptyIcon;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
-        
+        // Disable all cat like icons and clear text at scene start
+        for (int i = 0; i < catLikeIcons.Length; i++)
+        {
+            if (catLikeIcons[i] != null)
+            {
+                catLikeIcons[i].enabled = false;
+                ClearText(catLikeIcons[i]);
+            }
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
+        // Optionally call this continuously if needed:
         // UpdateCatLikesGUI();
     }
 
-    // public void UpdateCatLikesGUI()
-    // {
-    //     for (int i = 0; i < catLikeIcons.Length; i++)
-    //     {
-    //         if (currentlySelectedCat != null)
-    //         {
-    //             if(currentlySelectedCat.GetComponent<CatHappiness>().catLikes[i])
-    //             {
-    //                 if(currentlySelectedCat.GetComponent<CatHappiness>().catLikes[i] != null)
-    //                 {                   
-    //                     checkBoxRef = catLikeIcons[i].transform.GetChild(0); // first child
-    //                     textRef = catLikeIcons[i].transform.GetChild(1); // second child
-
-    //                     catLikeIcons[i].sprite = currentlySelectedCat.GetComponent<CatHappiness>().catLikes[i].catImage;
-
-    //                     TextMeshProUGUI textComponent = textRef.GetComponent<TextMeshProUGUI>();
-    //                     textComponent.text = currentlySelectedCat.GetComponent<CatHappiness>().catLikes[i].likeTag;
-    //                 }
-    //             }
-    //             else{
-    //                 catLikeIcons[i].sprite = emptyIcon;
-    //             }
-    //         }
-    //         else{
-    //             catLikeIcons[i].sprite = emptyIcon;
-    //         }
-            
-    //     }
-    // }
     public void UpdateCatLikesGUI()
-{
-    for (int i = 0; i < catLikeIcons.Length; i++)
     {
-        if (currentlySelectedCat != null)
+        for (int i = 0; i < catLikeIcons.Length; i++)
         {
-            CatHappiness catHappiness = currentlySelectedCat.GetComponent<CatHappiness>();
-
-            // Only update if catLikes array exists and has this index
-            if (catHappiness.catLikes != null && i < catHappiness.catLikes.Length)
+            if (currentlySelectedCat != null)
             {
-                var like = catHappiness.catLikes[i];
+                CatHappiness catHappiness = currentlySelectedCat.GetComponent<CatHappiness>();
 
-                if (like != null && like.catImage != null)
+                if (catHappiness.catLikes != null && i < catHappiness.catLikes.Length)
                 {
-                    // Set icon sprite
-                    catLikeIcons[i].sprite = like.catImage;
+                    var like = catHappiness.catLikes[i];
 
-                    // Set text
-                    if (catLikeIcons[i].transform.childCount >= 2)
+                    if (like != null && like.catImage != null)
                     {
-                        Transform textRef = catLikeIcons[i].transform.GetChild(1);
-                        TextMeshProUGUI textComponent = textRef.GetComponent<TextMeshProUGUI>();
-                        if (textComponent != null)
+                        // Enable and set sprite
+                        catLikeIcons[i].enabled = true;
+                        catLikeIcons[i].sprite = like.catImage;
+
+                        // Update text
+                        if (catLikeIcons[i].transform.childCount >= 2)
                         {
-                            textComponent.text = like.likeTag;
+                            Transform textRef = catLikeIcons[i].transform.GetChild(1);
+                            TextMeshProUGUI textComponent = textRef.GetComponent<TextMeshProUGUI>();
+                            if (textComponent != null)
+                            {
+                                textComponent.text = like.likeTag;
+                            }
                         }
+                    }
+                    else
+                    {
+                        // Disable image when no like
+                        catLikeIcons[i].enabled = false;
+                        ClearText(catLikeIcons[i]);
                     }
                 }
                 else
                 {
-                    // Empty like
-                    catLikeIcons[i].sprite = emptyIcon;
-
-                    if (catLikeIcons[i].transform.childCount >= 2)
-                    {
-                        Transform textRef = catLikeIcons[i].transform.GetChild(1);
-                        TextMeshProUGUI textComponent = textRef.GetComponent<TextMeshProUGUI>();
-                        if (textComponent != null)
-                        {
-                            textComponent.text = "";
-                        }
-                    }
+                    // Disable image if out of range
+                    catLikeIcons[i].enabled = false;
+                    ClearText(catLikeIcons[i]);
                 }
             }
             else
             {
-                // No like at this index, set empty
-                catLikeIcons[i].sprite = emptyIcon;
-
-                if (catLikeIcons[i].transform.childCount >= 2)
-                {
-                    Transform textRef = catLikeIcons[i].transform.GetChild(1);
-                    TextMeshProUGUI textComponent = textRef.GetComponent<TextMeshProUGUI>();
-                    if (textComponent != null)
-                    {
-                        textComponent.text = "";
-                    }
-                }
-            }
-        }
-        else
-        {
-            // No cat selected, set all to empty
-            catLikeIcons[i].sprite = emptyIcon;
-
-            if (catLikeIcons[i].transform.childCount >= 2)
-            {
-                Transform textRef = catLikeIcons[i].transform.GetChild(1);
-                TextMeshProUGUI textComponent = textRef.GetComponent<TextMeshProUGUI>();
-                if (textComponent != null)
-                {
-                    textComponent.text = "";
-                }
+                // No cat selected, disable all
+                catLikeIcons[i].enabled = false;
+                ClearText(catLikeIcons[i]);
             }
         }
     }
-}
 
-
+    private void ClearText(Image image)
+    {
+        if (image != null && image.transform.childCount >= 2)
+        {
+            Transform textRef = image.transform.GetChild(1);
+            TextMeshProUGUI textComponent = textRef.GetComponent<TextMeshProUGUI>();
+            if (textComponent != null)
+            {
+                textComponent.text = "";
+            }
+        }
+    }
 }

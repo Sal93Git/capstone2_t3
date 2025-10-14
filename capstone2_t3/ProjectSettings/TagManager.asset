@@ -7,6 +7,8 @@ TagManager:
   - Food
   - Cat
   - Water
+  - Human
+  - Shade
   layers:
   - Default
   - TransparentFX
