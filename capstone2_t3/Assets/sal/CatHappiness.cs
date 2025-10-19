@@ -6,7 +6,7 @@ public class CatHappiness : MonoBehaviour
 
     private CatDragAndDrop catDragAndDropRef;
 
-    private bool catSatisfied = false;
+    public bool catSatisfied = false;
     private bool partiallySatisfied = false;
 
     public GameObject catPlumbob;

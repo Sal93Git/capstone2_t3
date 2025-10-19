@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,6 +17,11 @@ public class GameManager : MonoBehaviour
     public Sprite happyCheck;
     public Sprite unhappyCheck;
 
+    public bool levelFinished = false;
+
+    public GameObject endLevelMenu;
+
+
     void Start()
     {
         // Disable all cat like icons and clear text at scene start
@@ -30,12 +36,37 @@ public class GameManager : MonoBehaviour
                 checkBoxImage.sprite = emptyIcon;
             }
         }
+        endLevelMenu.SetActive(false);
     }
 
     void Update()
     {
-        // Optionally call this continuously if needed:
-        // UpdateCatLikesGUI();
+
+    }
+
+    public void CheckForLevelCompleteCondition()
+    {
+        bool conditionsMet = true;
+        foreach(GameObject cat in inLevelCats)
+        {
+            if(cat.tag != "UnplacedCat")
+            {
+                cat.GetComponent<CatHappiness>().CheckIfAllLikesAreSatisfied();
+                if(!cat.GetComponent<CatHappiness>().catSatisfied)
+                {
+                    conditionsMet = false;
+                }
+            }
+            else{
+                conditionsMet = false;
+            }
+            
+        }
+        if(conditionsMet)
+        {
+            levelFinished=true;
+            endLevelMenu.SetActive(true);
+        }
     }
 
     public void UpdateCatLikesGUI()
@@ -108,6 +139,7 @@ public class GameManager : MonoBehaviour
                 checkBoxImage.sprite = emptyIcon;
             }
         }
+        //CheckForLevelCompleteCondition();
     }
 
     private void ClearText(Image image)
@@ -121,5 +153,15 @@ public class GameManager : MonoBehaviour
                 textComponent.text = "";
             }
         }
+    }
+
+    public void ReloadCurrentScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void quitApp()
+    {
+        Application.Quit();
     }
 }
