@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 5ea7df1e80a3b0e4aab06729750f62c7
+guid: b9b8d24b275d3584197623df14ace65b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7377632933924431943
-    second: GreyCatHolding_0
+      213: -957296258661132986
+    second: GreenPaw_0
+  - first:
+      213: 6030453183818068040
+    second: GreenPaw_1
+  - first:
+      213: -5512046919345902312
+    second: GreenPaw_2
+  - first:
+      213: -479221010661342373
+    second: GreenPaw_3
+  - first:
+      213: 5998895827055848486
+    second: GreenPaw_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 75
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,23 +112,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GreyCatHolding_0
+      name: GreenPaw_0
       rect:
         serializedVersion: 2
-        x: 87
-        y: 49
-        width: 138
-        height: 259
-      alignment: 9
-      pivot: {x: 0.7330025, y: 0.9320352}
+        x: 5
+        y: 138
+        width: 95
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b7163a5fe16d9990800000000000000
-      internalID: -7377632933924431943
+      spriteID: 64551bdef1007b2f0800000000000000
+      internalID: -957296258661132986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenPaw_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 217
+        width: 100
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8407910583970b350800000000000000
+      internalID: 6030453183818068040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenPaw_2
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 217
+        width: 100
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81de91be7864183b0800000000000000
+      internalID: -5512046919345902312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenPaw_3
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 138
+        width: 95
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5380a2a7077959f0800000000000000
+      internalID: -479221010661342373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenPaw_4
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 18
+        width: 279
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62cac30a8fb504350800000000000000
+      internalID: 5998895827055848486
       vertices: []
       indices: 
       edges: []
@@ -125,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c057d65ee9432cf4a8af19246280b652
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GreyCatHolding_0: -7377632933924431943
+      GreenPaw_0: -957296258661132986
+      GreenPaw_1: 6030453183818068040
+      GreenPaw_2: -5512046919345902312
+      GreenPaw_3: -479221010661342373
+      GreenPaw_4: 5998895827055848486
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

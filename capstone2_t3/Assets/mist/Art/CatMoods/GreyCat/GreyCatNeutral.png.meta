@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5ea7df1e80a3b0e4aab06729750f62c7
+guid: 1603cfa5367182943be8bf4ff97b3726
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7377632933924431943
-    second: GreyCatHolding_0
+      213: 3683486479868111426
+    second: GreyCatNeutral_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 75
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GreyCatHolding_0
+      name: GreyCatNeutral_0
       rect:
         serializedVersion: 2
-        x: 87
-        y: 49
-        width: 138
-        height: 259
-      alignment: 9
-      pivot: {x: 0.7330025, y: 0.9320352}
+        x: 29
+        y: 78
+        width: 301
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b7163a5fe16d9990800000000000000
-      internalID: -7377632933924431943
+      spriteID: 24a2e7fff6f5e1330800000000000000
+      internalID: 3683486479868111426
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c057d65ee9432cf4a8af19246280b652
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GreyCatHolding_0: -7377632933924431943
+      GreyCatNeutral_0: 3683486479868111426
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
