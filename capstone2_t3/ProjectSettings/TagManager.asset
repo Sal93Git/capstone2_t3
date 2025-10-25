@@ -11,6 +11,10 @@ TagManager:
   - Shade
   - UnplacedCat
   - Technology
+  - AlienCat
+  - Knowledge
+  - Noise
+  - Toy
   layers:
   - Default
   - TransparentFX
