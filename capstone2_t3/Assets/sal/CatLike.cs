@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 [CreateAssetMenu(fileName = "New Like", menuName = "Cat/Like")]
 public class CatLike : ScriptableObject
@@ -20,7 +21,30 @@ public class CatLike : ScriptableObject
 
         if (cat.tag != "UnplacedCat")
         {
-            GameObject[] likeObjects = GameObject.FindGameObjectsWithTag(likeTag);
+            GameObject[] likeObjects;
+
+            if(this.name.Contains("Alone"))
+            {
+                // Add all objects to likeObjects that contain Cat but not UnplacedCat
+                List<GameObject> likeObjectsList = new List<GameObject>();
+                GameObject[] allObjects = GameObject.FindObjectsOfType<GameObject>();
+                foreach (GameObject obj in allObjects)
+                {
+                    if (obj.tag.Contains("Cat") && !obj.tag.Contains("UnplacedCat"))
+                    {
+                        likeObjectsList.Add(obj); // add to list
+                    }
+                }
+
+                // convert to array if needed
+                likeObjects = likeObjectsList.ToArray();
+            }
+            else{
+                likeObjects = GameObject.FindGameObjectsWithTag(likeTag);
+            }
+            
+            
+            // GameObject[] likeObjects = GameObject.FindGameObjectsWithTag(likeTag);
 
             // For Like, true if ANY within range
             if (type == Type.Like)

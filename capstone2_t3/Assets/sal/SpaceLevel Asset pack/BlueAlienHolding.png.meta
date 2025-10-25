@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: d6ab0708af5fc2c42bb9c021a5ad1e41
+guid: f8003777e22ff2a41bf08ef5db6efc00
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6210668508718394119
-    second: Noise_0
-  - first:
-      213: 998772372843838830
-    second: Noise_1
+      213: 50226197216208297
+    second: BlueAlienHolding_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,45 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Noise_0
+      name: BlueAlienHolding_0
       rect:
         serializedVersion: 2
-        x: 134
-        y: 155
-        width: 103
-        height: 85
+        x: 87
+        y: 45
+        width: 138
+        height: 272
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f4922895e54fc9a0800000000000000
-      internalID: -6210668508718394119
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Noise_1
-      rect:
-        serializedVersion: 2
-        x: 179
-        y: 162
-        width: 57
-        height: 77
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e6db4de6e2a5cdd00800000000000000
-      internalID: 998772372843838830
+      spriteID: 9a5ad73d57072b000800000000000000
+      internalID: 50226197216208297
       vertices: []
       indices: 
       edges: []
@@ -176,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d5f5718d1cf9a7a41a7f17c2b84066f7
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -186,8 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Noise_0: -6210668508718394119
-      Noise_1: 998772372843838830
+      BlueAlienHolding_0: 50226197216208297
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Alone
   m_EditorClassIdentifier: 
   likeTag: Cat
-  catImage: {fileID: 5392294321298590675, guid: 1a450c0ae751ea04388397e2bdbadd47, type: 3}
+  catImage: {fileID: 7493831993734941245, guid: 5193f67bfb9dd4a4a8bc2ec52ea2b40d, type: 3}
   type: 1

@@ -15,6 +15,8 @@ public class CatDragAndDrop : MonoBehaviour
     public SpriteRenderer currentSprite;
     Animator anim;
 
+    public CatType catType;
+
     void Start()
     {
         catHappinessRef = GetComponent<CatHappiness>();
@@ -80,7 +82,8 @@ public class CatDragAndDrop : MonoBehaviour
             if (hitCollider != null && hitCollider.TryGetComponent(out ICatDropArea catDropArea))
             {
                 catDropArea.OnCatDrop(this, mousePos);
-                this.gameObject.tag = "Cat"; // Successfully placed
+                // this.gameObject.tag = "Cat"; // Successfully placed
+                this.gameObject.tag = catType.ToString();
                 // catHappinessRef.catPlumbob.SetActive(true);
                 // catHappinessRef.CheckIfAllLikesAreSatisfied();
                 gameManagerRef.CheckForLevelCompleteCondition();
@@ -143,4 +146,10 @@ public class CatDragAndDrop : MonoBehaviour
             }
         }
     }
+}
+
+public enum CatType
+{
+    Cat,
+    AlienCat,
 }
