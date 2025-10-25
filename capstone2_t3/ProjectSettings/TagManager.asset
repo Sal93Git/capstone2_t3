@@ -10,6 +10,7 @@ TagManager:
   - Human
   - Shade
   - UnplacedCat
+  - Technology
   layers:
   - Default
   - TransparentFX
