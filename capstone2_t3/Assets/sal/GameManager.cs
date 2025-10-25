@@ -163,6 +163,6 @@ public class GameManager : MonoBehaviour
 
     public void quitApp()
     {
-        Application.Quit();
+        SceneManager.LoadScene(0);
     }
 }
