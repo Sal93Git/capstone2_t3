@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 453da49ae91bf924a9ed67340e26c8ae, type: 3}
+  m_Name: Technology
+  m_EditorClassIdentifier: 
+  likeTag: Technology
+  catImage: {fileID: 6286728706534349770, guid: b48e6e74830b19f48a6fdfa706e2625a, type: 3}

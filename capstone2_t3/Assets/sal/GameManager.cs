@@ -94,7 +94,8 @@ public class GameManager : MonoBehaviour
                             TextMeshProUGUI textComponent = textRef.GetComponent<TextMeshProUGUI>();
                             if (textComponent != null)
                             {
-                                textComponent.text = like.likeTag;
+                                // textComponent.text = like.likeTag;
+                                textComponent.text = like.name;
                             }
 
                             Transform checkBoxRef = catLikeIcons[i].transform.GetChild(0);
@@ -162,6 +163,6 @@ public class GameManager : MonoBehaviour
 
     public void quitApp()
     {
-        Application.Quit();
+        SceneManager.LoadScene(0);
     }
 }
