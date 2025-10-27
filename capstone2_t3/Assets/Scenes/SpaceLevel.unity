@@ -1332,6 +1332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 385875269}
   - component: {fileID: 385875270}
+  - component: {fileID: 385875271}
   m_Layer: 0
   m_Name: Meteor Medium_0
   m_TagString: Untagged
@@ -1409,6 +1410,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &385875271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385875268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c537c0217e148240bec418890eea1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flipRotation: 1
+  rotationSpeed: 10
 --- !u!1 &392098679
 GameObject:
   m_ObjectHideFlags: 0
@@ -3181,6 +3196,7 @@ GameObject:
   - component: {fileID: 892647654}
   - component: {fileID: 892647653}
   - component: {fileID: 892647652}
+  - component: {fileID: 892647656}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3273,6 +3289,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &892647656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892647651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c537c0217e148240bec418890eea1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flipRotation: 0
+  rotationSpeed: 0
 --- !u!1 &898966146
 GameObject:
   m_ObjectHideFlags: 0
@@ -3819,6 +3849,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1055985904}
   - component: {fileID: 1055985905}
+  - component: {fileID: 1055985906}
   m_Layer: 0
   m_Name: Meteor Small_0
   m_TagString: Untagged
@@ -3896,6 +3927,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1055985906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055985903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c537c0217e148240bec418890eea1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flipRotation: 1
+  rotationSpeed: 20
 --- !u!1 &1104701883
 GameObject:
   m_ObjectHideFlags: 0
@@ -4107,6 +4152,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1157598917}
   - component: {fileID: 1157598918}
+  - component: {fileID: 1157598919}
+  - component: {fileID: 1157598920}
   m_Layer: 0
   m_Name: Meteor Large_0
   m_TagString: Untagged
@@ -4184,6 +4231,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1157598919
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157598916}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f379632a944ff0b44b15c59271faa549, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1157598920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157598916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c537c0217e148240bec418890eea1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flipRotation: 0
+  rotationSpeed: 1
 --- !u!1 &1182270550
 GameObject:
   m_ObjectHideFlags: 0
@@ -5563,6 +5646,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1575304906}
   - component: {fileID: 1575304907}
+  - component: {fileID: 1575304908}
   m_Layer: 0
   m_Name: Meteor Small_0 (1)
   m_TagString: Untagged
@@ -5640,6 +5724,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1575304908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575304905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c537c0217e148240bec418890eea1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flipRotation: 0
+  rotationSpeed: 15
 --- !u!1 &1603460667
 GameObject:
   m_ObjectHideFlags: 0
