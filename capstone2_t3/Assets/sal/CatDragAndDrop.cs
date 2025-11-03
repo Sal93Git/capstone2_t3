@@ -10,8 +10,8 @@ public class CatDragAndDrop : MonoBehaviour
     public bool dragging = false;
     private Collider2D lastHoveredCat = null;
 
-    public Sprite idleCat;
-    public Sprite holdingCat; 
+    //public Sprite idleCat;
+    //public Sprite holdingCat; 
     public SpriteRenderer currentSprite;
     Animator anim;
 
