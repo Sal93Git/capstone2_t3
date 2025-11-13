@@ -51,3 +51,7 @@
 .Unfaded {
     opacity: 0;
 }
+
+.LvlFadeout {
+    translate: 0 1000px;
+}

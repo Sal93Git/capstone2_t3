@@ -87,4 +87,8 @@ public class PersistentUI : MonoBehaviour
         BlackScreen.style.opacity = 0f;
     }
 
+    public void NextLevel()
+    {
+        SceneManager.LoadScene(3);
+    }
 }

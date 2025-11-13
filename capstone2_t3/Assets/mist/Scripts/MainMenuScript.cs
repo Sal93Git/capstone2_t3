@@ -32,9 +32,9 @@ public class MainMenuUI : MonoBehaviour
         PlayBut.clicked += OnStartButtonClicked;
         QuitBut.clicked += OnQuitButtonClicked;
 
-        Lvl1But.clicked += () => StartCoroutine(LoadLevelWithFade(2));
-        Lvl2But.clicked += () => StartCoroutine(LoadLevelWithFade(3));
-        Lvl3But.clicked += () => StartCoroutine(LoadLevelWithFade(4));
+        Lvl1But.clicked += () => StartCoroutine(LoadLevelWithFade(2, Lvl1But));
+        Lvl2But.clicked += () => StartCoroutine(LoadLevelWithFade(3, Lvl2But));
+        Lvl3But.clicked += () => StartCoroutine(LoadLevelWithFade(4, Lvl3But));
 
         // Start with them hidden
         Lvl1But.AddToClassList("LvlUnclicked");
@@ -78,11 +78,13 @@ public class MainMenuUI : MonoBehaviour
         Lvl3But.AddToClassList("LvlClicked");
     }
 
-    IEnumerator LoadLevelWithFade(int sceneIndex)
+    IEnumerator LoadLevelWithFade(int sceneIndex, Button clickedButton)
     {
         // Trigger the fade-out animation
         BlackScreen.RemoveFromClassList("Unfaded");
         BlackScreen.AddToClassList("Faded");
+        
+        clickedButton.AddToClassList("LvlFadeout");
 
         // Wait for fade duration (match this to your CSS transition time)
         yield return new WaitForSeconds(1f);
