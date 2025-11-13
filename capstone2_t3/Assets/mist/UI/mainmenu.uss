@@ -1,0 +1,53 @@
+:root {
+}
+
+.Button {
+    background-image: url("project://database/Assets/mist/Art/GUI/Levels.png?fileID=2800000&guid=2fb33942dd779ef45938624249bd6293&type=3#Levels");
+    width: 15%;
+    background-color: rgba(188, 188, 188, 0);
+    height: 15%;
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    transition-property: position;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-sine;
+}
+
+.Button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-size: 105% 105%;
+}
+
+.Clicked {
+    translate: -500px 0;
+    transition-property: translate;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-in-sine;
+}
+
+.LvlClicked {
+    background-image: url("project://database/Assets/mist/Art/CatMoods/BrownCat/BrownCatAngry.png?fileID=2800000&guid=ac33b9b0dbddc7a458f3a849a54718b7&type=3#BrownCatAngry");
+    width: 150px;
+    height: 131px;
+    transition-property: translate;
+    transition-duration: 2s;
+    transition-timing-function: ease-out-bounce;
+}
+
+.LvlUnclicked {
+    translate: 0 -540px;
+    transition-property: translate;
+    transition-timing-function: ease-out-bounce;
+    transition-duration: 2s;
+}
+
+.Faded {
+    opacity: 1;
+}
+
+.Unfaded {
+    opacity: 0;
+}

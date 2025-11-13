@@ -1,0 +1,11 @@
+:root {
+
+}
+
+.Faded {
+    opacity: 1;
+}
+
+.Unfaded {
+    opacity: 0;
+}

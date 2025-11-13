@@ -1,48 +1,99 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
+using System.Collections;
+
 public class MainMenuUI : MonoBehaviour
 {
-    private VisualElement Buttons;
+    private VisualElement MainMenuButtons;
+    private VisualElement LevelButtons;
     private Button PlayBut;
-    private Button LevelBut;
     private Button QuitBut;
+    private Button Lvl1But;
+    private Button Lvl2But;
+    private Button Lvl3But;
+    private VisualElement BlackScreen;
+
     void OnEnable()
     {
-        // Get the root VisualElement from the UI Document
         var root = GetComponent<UIDocument>().rootVisualElement;
 
-        //get the buttons (and parent buttons are on) so we can do something when they are clicked
-        Buttons = root.Q<VisualElement>("Buttons");
-       
+        MainMenuButtons = root.Q<VisualElement>("MainMenuButtons");
+        LevelButtons = root.Q<VisualElement>("LevelButtons");
+        BlackScreen = root.Q<VisualElement>("BlackScreen");
+
         PlayBut = root.Q<Button>("PlayBut");
-        LevelBut = root.Q<Button>("LevelsBut");
         QuitBut = root.Q<Button>("QuitBut");
 
-        //connect method to on button clicked
+        Lvl1But = root.Q<Button>("Lvl1But");
+        Lvl2But = root.Q<Button>("Lvl2But");
+        Lvl3But = root.Q<Button>("Lvl3But");
+
         PlayBut.clicked += OnStartButtonClicked;
-        LevelBut.clicked += OnLevelButButtonClicked;
         QuitBut.clicked += OnQuitButtonClicked;
+
+        Lvl1But.clicked += () => StartCoroutine(LoadLevelWithFade(2));
+        Lvl2But.clicked += () => StartCoroutine(LoadLevelWithFade(3));
+        Lvl3But.clicked += () => StartCoroutine(LoadLevelWithFade(4));
+
+        // Start with them hidden
+        Lvl1But.AddToClassList("LvlUnclicked");
+        Lvl2But.AddToClassList("LvlUnclicked");
+        Lvl3But.AddToClassList("LvlUnclicked");
     }
 
     void OnStartButtonClicked()
     {
         Debug.Log("Start button pressed!");
-        // Example action:
-        SceneManager.LoadScene(1); //load main menu
-     }
 
-    void OnLevelButButtonClicked()
-    {
-        Debug.Log("Levelk button pressed!");
-        // Example action:
-        SceneManager.LoadScene("GameScene");
+        if (PlayBut.ClassListContains("Clicked"))
+        {
+            PlayBut.RemoveFromClassList("Clicked");
+            QuitBut.RemoveFromClassList("Clicked");
+            Lvl1But.AddToClassList("LvlUnclicked");
+            Lvl2But.AddToClassList("LvlUnclicked");
+            Lvl3But.AddToClassList("LvlUnclicked");
+        }
+        else
+        {
+            PlayBut.AddToClassList("Clicked");
+            QuitBut.AddToClassList("Clicked");
+            StartCoroutine(ShowLevelButtonsSequentially());
+        }
     }
-    
+
+    IEnumerator ShowLevelButtonsSequentially()
+    {
+        float delay = 0.3f;
+
+        Lvl1But.RemoveFromClassList("LvlUnclicked");
+        Lvl1But.AddToClassList("LvlClicked");
+        yield return new WaitForSeconds(delay);
+
+        Lvl2But.RemoveFromClassList("LvlUnclicked");
+        Lvl2But.AddToClassList("LvlClicked");
+        yield return new WaitForSeconds(delay);
+
+        Lvl3But.RemoveFromClassList("LvlUnclicked");
+        Lvl3But.AddToClassList("LvlClicked");
+    }
+
+    IEnumerator LoadLevelWithFade(int sceneIndex)
+    {
+        // Trigger the fade-out animation
+        BlackScreen.RemoveFromClassList("Unfaded");
+        BlackScreen.AddToClassList("Faded");
+
+        // Wait for fade duration (match this to your CSS transition time)
+        yield return new WaitForSeconds(1f);
+
+        // Now change the scene
+        SceneManager.LoadScene(sceneIndex);
+    }
+
     void OnQuitButtonClicked()
     {
         Debug.Log("Quit button pressed!");
-        // Example action:
         Application.Quit();
     }
 }
