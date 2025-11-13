@@ -14,6 +14,9 @@ public class MainMenuUI : MonoBehaviour
     private Button Lvl3But;
     private VisualElement BlackScreen;
 
+    public AudioSource audioSource;
+
+
     void OnEnable()
     {
         var root = GetComponent<UIDocument>().rootVisualElement;
@@ -45,7 +48,7 @@ public class MainMenuUI : MonoBehaviour
     void OnStartButtonClicked()
     {
         Debug.Log("Start button pressed!");
-
+        audioSource.Play();
         if (PlayBut.ClassListContains("Clicked"))
         {
             PlayBut.RemoveFromClassList("Clicked");
@@ -83,7 +86,7 @@ public class MainMenuUI : MonoBehaviour
         // Trigger the fade-out animation
         BlackScreen.RemoveFromClassList("Unfaded");
         BlackScreen.AddToClassList("Faded");
-        
+        audioSource.Play(); //play click sfx
         clickedButton.AddToClassList("LvlFadeout");
 
         // Wait for fade duration (match this to your CSS transition time)
@@ -95,6 +98,7 @@ public class MainMenuUI : MonoBehaviour
 
     void OnQuitButtonClicked()
     {
+        audioSource.Play();
         Debug.Log("Quit button pressed!");
         Application.Quit();
     }
