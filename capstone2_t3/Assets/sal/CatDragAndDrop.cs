@@ -70,7 +70,7 @@ public class CatDragAndDrop : MonoBehaviour
         {
             transform.position = mousePos;
             anim.enabled = false;
-            currentSprite.sprite = holdingCat;
+            // currentSprite.sprite = holdingCat;
             if(gameObject.tag == "UnplacedCat")
             {
                 gameObject.tag = "draggingCat";
