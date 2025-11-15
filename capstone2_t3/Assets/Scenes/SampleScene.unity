@@ -2429,7 +2429,7 @@ Transform:
   m_GameObject: {fileID: 362317875}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.592, y: 4.1900005, z: 0}
+  m_LocalPosition: {x: -1.49, y: 3.98, z: 0}
   m_LocalScale: {x: 0.49395528, y: 0.49395528, z: 0.49395528}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2990,7 +2990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8711204517015391297, guid: 7f046943256f6ae40a569c9c282afa3e, type: 3}
       propertyPath: m_SortingOrder
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3071,7 +3071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5717344026342617565, guid: 4147ec56ccd817e449035ded60264f37, type: 3}
       propertyPath: m_SortingOrder
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8853320151774283560, guid: 4147ec56ccd817e449035ded60264f37, type: 3}
       propertyPath: m_Name
@@ -3353,9 +3353,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 21828bc6e5f51b54492196557f8efe43, type: 2}
   catSatisfied: 0
   catPlumbob: {fileID: 1002685063}
-  happyPlumbob: {fileID: 8692152049258753946, guid: 10e6e413920574c478bd2fc0edf9bd90, type: 3}
-  neutralPlumbob: {fileID: 1107951988898541095, guid: 26c11554c200cca4ea3cc6e64cc92284, type: 3}
-  unhappyPlumbob: {fileID: -5299824590308755832, guid: 40331a47ae2e4cf4ab3e37701920a910, type: 3}
+  happyPlumbob: {fileID: -6168765445412597301, guid: 28b80bfb21578de48a0dc920fcfcd9c9, type: 3}
+  neutralPlumbob: {fileID: -8720468007143068442, guid: d9cdec59e36ca7140bd20cd930e33a10, type: 3}
+  unhappyPlumbob: {fileID: 2381706216346028013, guid: 23a35848eddc375469741b68f5e6e854, type: 3}
 --- !u!4 &466330594 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3151822712665262422, guid: 4147ec56ccd817e449035ded60264f37, type: 3}
@@ -4816,9 +4816,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9def9c3c233b9974795ebbbd2bd6013c, type: 2}
   catSatisfied: 0
   catPlumbob: {fileID: 1854677250}
-  happyPlumbob: {fileID: 8692152049258753946, guid: 10e6e413920574c478bd2fc0edf9bd90, type: 3}
-  neutralPlumbob: {fileID: 1107951988898541095, guid: 26c11554c200cca4ea3cc6e64cc92284, type: 3}
-  unhappyPlumbob: {fileID: -5299824590308755832, guid: 40331a47ae2e4cf4ab3e37701920a910, type: 3}
+  happyPlumbob: {fileID: -6168765445412597301, guid: 28b80bfb21578de48a0dc920fcfcd9c9, type: 3}
+  neutralPlumbob: {fileID: -8720468007143068442, guid: d9cdec59e36ca7140bd20cd930e33a10, type: 3}
+  unhappyPlumbob: {fileID: 2381706216346028013, guid: 23a35848eddc375469741b68f5e6e854, type: 3}
 --- !u!4 &704338991 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 458127294045332323, guid: 7f046943256f6ae40a569c9c282afa3e, type: 3}
@@ -5982,7 +5982,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2045368905076212821, guid: efea2607a1b060947871bdaaa23fe4f4, type: 3}
       propertyPath: m_SortingOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5726245156201995395, guid: efea2607a1b060947871bdaaa23fe4f4, type: 3}
       propertyPath: m_LocalScale.x
@@ -6125,7 +6125,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 15
   m_Sprite: {fileID: -4519137077466534252, guid: c8dcbe7592bd5ef498330d70c370f7d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9643,9 +9643,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 21828bc6e5f51b54492196557f8efe43, type: 2}
   catSatisfied: 0
   catPlumbob: {fileID: 2060467769}
-  happyPlumbob: {fileID: 8692152049258753946, guid: 10e6e413920574c478bd2fc0edf9bd90, type: 3}
-  neutralPlumbob: {fileID: 1107951988898541095, guid: 26c11554c200cca4ea3cc6e64cc92284, type: 3}
-  unhappyPlumbob: {fileID: -5299824590308755832, guid: 40331a47ae2e4cf4ab3e37701920a910, type: 3}
+  happyPlumbob: {fileID: -6168765445412597301, guid: 28b80bfb21578de48a0dc920fcfcd9c9, type: 3}
+  neutralPlumbob: {fileID: -8720468007143068442, guid: d9cdec59e36ca7140bd20cd930e33a10, type: 3}
+  unhappyPlumbob: {fileID: 2381706216346028013, guid: 23a35848eddc375469741b68f5e6e854, type: 3}
 --- !u!4 &1518084408 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 88045525375180297, guid: 0130629d68bb6134b970a249b10413fc, type: 3}
@@ -10296,7 +10296,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 15
   m_Sprite: {fileID: 497600754102043572, guid: 05b264672a1ef4647a75106ec4eadcb2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11680,9 +11680,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 829ae5667eaecdf48a41438f034e6114, type: 2}
   catSatisfied: 0
   catPlumbob: {fileID: 1199388300}
-  happyPlumbob: {fileID: 8692152049258753946, guid: 10e6e413920574c478bd2fc0edf9bd90, type: 3}
-  neutralPlumbob: {fileID: 1107951988898541095, guid: 26c11554c200cca4ea3cc6e64cc92284, type: 3}
-  unhappyPlumbob: {fileID: -5299824590308755832, guid: 40331a47ae2e4cf4ab3e37701920a910, type: 3}
+  happyPlumbob: {fileID: -6168765445412597301, guid: 28b80bfb21578de48a0dc920fcfcd9c9, type: 3}
+  neutralPlumbob: {fileID: -8720468007143068442, guid: d9cdec59e36ca7140bd20cd930e33a10, type: 3}
+  unhappyPlumbob: {fileID: 2381706216346028013, guid: 23a35848eddc375469741b68f5e6e854, type: 3}
 --- !u!4 &1896796176 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5726245156201995395, guid: efea2607a1b060947871bdaaa23fe4f4, type: 3}

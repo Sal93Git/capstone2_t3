@@ -42,7 +42,7 @@ public class CatDragAndDrop : MonoBehaviour
             Collider2D[] hits = Physics2D.OverlapPointAll(mousePos);
             foreach (var hit in hits)
             {
-                if (hit.gameObject.tag.Contains("Cat") && hit.gameObject == this.gameObject)
+                if (hit.gameObject.tag.Contains("Cat") && hit.gameObject == this.gameObject && gameManagerRef.isHoldingCat == false)
                 {
                     dragging = true;
                     startDragPosition = transform.position;
@@ -52,26 +52,35 @@ public class CatDragAndDrop : MonoBehaviour
                     if (gameManagerRef != null)
                     {
                         gameManagerRef.currentlySelectedCat = this.gameObject;
-                        gameManagerRef.UpdateCatLikesGUI();
+                        // gameManagerRef.UpdateCatLikesGUI();
                     }
-
+                    gameManagerRef.isHoldingCat = true;
                     // Mark as being picked up
-                    break;
+                    return;
                 }
             }
         }
 
+        if(dragging)
+        {
+            catHappinessRef.CheckIfAllLikesAreSatisfied();
+        }
         // DRAGGING
         if (dragging && Input.GetMouseButton(0))
         {
             transform.position = mousePos;
             anim.enabled = false;
             currentSprite.sprite = holdingCat;
+            if(gameObject.tag == "UnplacedCat")
+            {
+                gameObject.tag = "draggingCat";
+            }
         }
 
         // DROP
         if (dragging && Input.GetMouseButtonUp(0))
         {
+            gameManagerRef.isHoldingCat = false;
             dragging = false;
             currentSprite.sprite = idleCat;
             anim.enabled = true;
@@ -91,6 +100,10 @@ public class CatDragAndDrop : MonoBehaviour
             else
             {
                 transform.position = startDragPosition;
+                if(gameObject.tag == "draggingCat")
+                {
+                    gameObject.tag = "UnplacedCat";
+                }
             }
 
             // catHappinessRef.CheckIfAllLikesAreSatisfied();
@@ -133,7 +146,7 @@ public class CatDragAndDrop : MonoBehaviour
                 if (!dragging && gameManagerRef != null)
                 {
                     gameManagerRef.currentlySelectedCat = hoveredCat.gameObject;
-                    gameManagerRef.UpdateCatLikesGUI();
+                    // gameManagerRef.UpdateCatLikesGUI();
                 }
             }
             else
