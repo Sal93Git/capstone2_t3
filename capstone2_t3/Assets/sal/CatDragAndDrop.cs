@@ -10,8 +10,8 @@ public class CatDragAndDrop : MonoBehaviour
     public bool dragging = false;
     private Collider2D lastHoveredCat = null;
 
-    public Sprite idleCat;
-    public Sprite holdingCat; 
+    //public Sprite idleCat;
+    //public Sprite holdingCat; 
     public SpriteRenderer currentSprite;
     Animator anim;
 
@@ -28,7 +28,7 @@ public class CatDragAndDrop : MonoBehaviour
             Debug.LogWarning("No GameManager found in the scene!");
         }
 
-        currentSprite=GetComponent<SpriteRenderer>();
+        currentSprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
     }
 
@@ -75,6 +75,10 @@ public class CatDragAndDrop : MonoBehaviour
             {
                 gameObject.tag = "draggingCat";
             }
+            anim.SetBool("isHeld", true); //set bool in animator
+            print("bool true");
+            //anim.enabled = false;
+            //currentSprite.sprite = holdingCat;
         }
 
         // DROP
@@ -82,9 +86,7 @@ public class CatDragAndDrop : MonoBehaviour
         {
             gameManagerRef.isHoldingCat = false;
             dragging = false;
-            currentSprite.sprite = idleCat;
-            anim.enabled = true;
-
+            anim.SetBool("isHeld", false); //set bool in animator
             int dropAreaLayer = LayerMask.GetMask("DropArea");
             Collider2D hitCollider = Physics2D.OverlapPoint(mousePos, dropAreaLayer);
 
