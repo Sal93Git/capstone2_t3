@@ -15,6 +15,7 @@ TagManager:
   - Knowledge
   - Noise
   - Toy
+  - draggingCat
   layers:
   - Default
   - TransparentFX

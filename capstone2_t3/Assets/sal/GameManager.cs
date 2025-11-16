@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject endLevelMenu;
 
+    public bool isHoldingCat = false;
 
     void Start()
     {
@@ -41,7 +42,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-
+        UpdateCatLikesGUI();
     }
 
     public void CheckForLevelCompleteCondition()
