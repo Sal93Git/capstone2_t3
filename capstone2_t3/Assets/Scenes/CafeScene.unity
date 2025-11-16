@@ -2408,7 +2408,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 3
   m_Sprite: {fileID: -4838722353669787628, guid: edab9441ae592374eb67dbed647bff31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2990,7 +2990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8711204517015391297, guid: 7f046943256f6ae40a569c9c282afa3e, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3071,7 +3071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5717344026342617565, guid: 4147ec56ccd817e449035ded60264f37, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8853320151774283560, guid: 4147ec56ccd817e449035ded60264f37, type: 3}
       propertyPath: m_Name
@@ -5075,7 +5075,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 4213548205983672316, guid: 9bccb654f293d734c980732dbad6fabd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5288,6 +5288,7 @@ GameObject:
   - component: {fileID: 779539741}
   - component: {fileID: 779539740}
   - component: {fileID: 779539739}
+  - component: {fileID: 779539742}
   m_Layer: 5
   m_Name: next
   m_TagString: Untagged
@@ -5358,8 +5359,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 559336574}
-        m_TargetAssemblyTypeName: PersistentUI, Assembly-CSharp
+      - m_Target: {fileID: 779539742}
+        m_TargetAssemblyTypeName: TempNextButton, Assembly-CSharp
         m_MethodName: NextLevel
         m_Mode: 1
         m_Arguments:
@@ -5408,6 +5409,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 779539737}
   m_CullTransparentMesh: 1
+--- !u!114 &779539742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779539737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6bf59822678284f86dcc11fbfa6d7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &780308114
 GameObject:
   m_ObjectHideFlags: 0
@@ -6305,7 +6318,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2045368905076212821, guid: efea2607a1b060947871bdaaa23fe4f4, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5726245156201995395, guid: efea2607a1b060947871bdaaa23fe4f4, type: 3}
       propertyPath: m_LocalScale.x
@@ -9675,7 +9688,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2376149205910218050, guid: 0130629d68bb6134b970a249b10413fc, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5941742188505424562, guid: 0130629d68bb6134b970a249b10413fc, type: 3}
       propertyPath: m_Name
@@ -10617,7 +10630,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 497600754102043572, guid: 05b264672a1ef4647a75106ec4eadcb2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11513,7 +11526,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1671081695634858156, guid: 4eb0e252354f70b45a141fb2aa23dbe3, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3298483900155326913, guid: 4eb0e252354f70b45a141fb2aa23dbe3, type: 3}
       propertyPath: m_Name

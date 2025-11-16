@@ -35,9 +35,9 @@ public class MainMenuUI : MonoBehaviour
         PlayBut.clicked += OnStartButtonClicked;
         QuitBut.clicked += OnQuitButtonClicked;
 
-        Lvl1But.clicked += () => StartCoroutine(LoadLevelWithFade(2, Lvl1But));
-        Lvl2But.clicked += () => StartCoroutine(LoadLevelWithFade(3, Lvl2But));
-        Lvl3But.clicked += () => StartCoroutine(LoadLevelWithFade(4, Lvl3But));
+        Lvl1But.clicked += () => StartCoroutine(LoadLevelWithFade(1, Lvl1But));
+        Lvl2But.clicked += () => StartCoroutine(LoadLevelWithFade(2, Lvl2But));
+        Lvl3But.clicked += () => StartCoroutine(LoadLevelWithFade(3, Lvl3But));
 
         // Start with them hidden
         Lvl1But.AddToClassList("LvlUnclicked");

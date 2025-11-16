@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using System.Runtime.CompilerServices;
 
 public class PersistentUI : MonoBehaviour
 {
@@ -89,6 +90,7 @@ public class PersistentUI : MonoBehaviour
 
     public void NextLevel()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
+        Debug.Log("nextlevel clicked");
     }
 }
