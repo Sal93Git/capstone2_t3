@@ -69,14 +69,13 @@ public class CatDragAndDrop : MonoBehaviour
         if (dragging && Input.GetMouseButton(0))
         {
             transform.position = mousePos;
-            anim.enabled = false;
             // currentSprite.sprite = holdingCat;
             if(gameObject.tag == "UnplacedCat")
             {
                 gameObject.tag = "draggingCat";
             }
             anim.SetBool("isHeld", true); //set bool in animator
-            print("bool true");
+        
             //anim.enabled = false;
             //currentSprite.sprite = holdingCat;
         }
@@ -113,6 +112,9 @@ public class CatDragAndDrop : MonoBehaviour
 
         // HOVER TRACKING (works even when dragging or dropped)
         UpdateHoveredCat(mousePos);
+
+        bool heldValue = anim.GetBool("isHeld");
+        Debug.Log("Animator reports isHeld = " + heldValue);
     }
 
     private void UpdateHoveredCat(Vector2 mousePos)

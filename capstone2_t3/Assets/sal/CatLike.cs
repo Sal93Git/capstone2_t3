@@ -80,7 +80,7 @@ public class CatLike : ScriptableObject
                     }
                 }
 
-                Debug.Log("Cat Dislike Satisfied (all far away)");
+                //Debug.Log("Cat Dislike Satisfied (all far away)");
                 return true; // all far enough
             }
         }
