@@ -16,8 +16,14 @@ public class ActivateButton : MonoBehaviour
 
         foreach (GameObject obj in allObjects)
         {
-            if (obj == this.gameObject) continue;
-            if (!obj.tag.ToLower().Contains("cat")) continue;
+            if (obj == this.gameObject) 
+            {
+                continue;
+            }
+            if (obj.tag.ToLower()!=("cat")) 
+            {
+                continue;
+            }
 
             float distance = Vector2.Distance(transform.position, obj.transform.position);
 
