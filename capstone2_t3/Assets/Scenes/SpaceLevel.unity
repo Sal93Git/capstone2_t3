@@ -1011,9 +1011,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 21828bc6e5f51b54492196557f8efe43, type: 2}
   catSatisfied: 0
   catPlumbob: {fileID: 1946816713}
-  happyPlumbob: {fileID: 8692152049258753946, guid: 10e6e413920574c478bd2fc0edf9bd90, type: 3}
-  neutralPlumbob: {fileID: 1107951988898541095, guid: 26c11554c200cca4ea3cc6e64cc92284, type: 3}
-  unhappyPlumbob: {fileID: -5299824590308755832, guid: 40331a47ae2e4cf4ab3e37701920a910, type: 3}
+  happyPlumbob: {fileID: -6168765445412597301, guid: 28b80bfb21578de48a0dc920fcfcd9c9, type: 3}
+  neutralPlumbob: {fileID: -8720468007143068442, guid: d9cdec59e36ca7140bd20cd930e33a10, type: 3}
+  unhappyPlumbob: {fileID: 2381706216346028013, guid: 23a35848eddc375469741b68f5e6e854, type: 3}
 --- !u!114 &303724138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1206,9 +1206,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9f55a674cc2af4d45afde35db83e32d1, type: 2}
   catSatisfied: 0
   catPlumbob: {fileID: 1839299311}
-  happyPlumbob: {fileID: 8692152049258753946, guid: 10e6e413920574c478bd2fc0edf9bd90, type: 3}
-  neutralPlumbob: {fileID: 1107951988898541095, guid: 26c11554c200cca4ea3cc6e64cc92284, type: 3}
-  unhappyPlumbob: {fileID: -5299824590308755832, guid: 40331a47ae2e4cf4ab3e37701920a910, type: 3}
+  happyPlumbob: {fileID: -6168765445412597301, guid: 28b80bfb21578de48a0dc920fcfcd9c9, type: 3}
+  neutralPlumbob: {fileID: -8720468007143068442, guid: d9cdec59e36ca7140bd20cd930e33a10, type: 3}
+  unhappyPlumbob: {fileID: 2381706216346028013, guid: 23a35848eddc375469741b68f5e6e854, type: 3}
 --- !u!114 &366663642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2770,9 +2770,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ff5bf73cb55a63c48a86ccd8f3c3157e, type: 2}
   catSatisfied: 0
   catPlumbob: {fileID: 1871071178}
-  happyPlumbob: {fileID: 8692152049258753946, guid: 10e6e413920574c478bd2fc0edf9bd90, type: 3}
-  neutralPlumbob: {fileID: 1107951988898541095, guid: 26c11554c200cca4ea3cc6e64cc92284, type: 3}
-  unhappyPlumbob: {fileID: -5299824590308755832, guid: 40331a47ae2e4cf4ab3e37701920a910, type: 3}
+  happyPlumbob: {fileID: -6168765445412597301, guid: 28b80bfb21578de48a0dc920fcfcd9c9, type: 3}
+  neutralPlumbob: {fileID: -8720468007143068442, guid: d9cdec59e36ca7140bd20cd930e33a10, type: 3}
+  unhappyPlumbob: {fileID: 2381706216346028013, guid: 23a35848eddc375469741b68f5e6e854, type: 3}
 --- !u!114 &663012491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4250,6 +4250,7 @@ MonoBehaviour:
   unhappyCheck: {fileID: 6188401898456972033, guid: 7b7700e3e6c83794cbd0ce2496640102, type: 3}
   levelFinished: 0
   endLevelMenu: {fileID: 446057474}
+  isHoldingCat: 0
 --- !u!4 &1148092059
 Transform:
   m_ObjectHideFlags: 0
@@ -5455,9 +5456,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 245c5cb8d0665174ab8415b670fd9179, type: 2}
   catSatisfied: 0
   catPlumbob: {fileID: 1371371496}
-  happyPlumbob: {fileID: 8692152049258753946, guid: 10e6e413920574c478bd2fc0edf9bd90, type: 3}
-  neutralPlumbob: {fileID: 1107951988898541095, guid: 26c11554c200cca4ea3cc6e64cc92284, type: 3}
-  unhappyPlumbob: {fileID: -5299824590308755832, guid: 40331a47ae2e4cf4ab3e37701920a910, type: 3}
+  happyPlumbob: {fileID: -6168765445412597301, guid: 28b80bfb21578de48a0dc920fcfcd9c9, type: 3}
+  neutralPlumbob: {fileID: -8720468007143068442, guid: d9cdec59e36ca7140bd20cd930e33a10, type: 3}
+  unhappyPlumbob: {fileID: 2381706216346028013, guid: 23a35848eddc375469741b68f5e6e854, type: 3}
 --- !u!114 &1510157163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6642,9 +6643,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 82076f95679a9324c82b7c95d8977781, type: 2}
   catSatisfied: 0
   catPlumbob: {fileID: 740618786}
-  happyPlumbob: {fileID: 8692152049258753946, guid: 10e6e413920574c478bd2fc0edf9bd90, type: 3}
-  neutralPlumbob: {fileID: 1107951988898541095, guid: 26c11554c200cca4ea3cc6e64cc92284, type: 3}
-  unhappyPlumbob: {fileID: -5299824590308755832, guid: 40331a47ae2e4cf4ab3e37701920a910, type: 3}
+  happyPlumbob: {fileID: -6168765445412597301, guid: 28b80bfb21578de48a0dc920fcfcd9c9, type: 3}
+  neutralPlumbob: {fileID: -8720468007143068442, guid: d9cdec59e36ca7140bd20cd930e33a10, type: 3}
+  unhappyPlumbob: {fileID: 2381706216346028013, guid: 23a35848eddc375469741b68f5e6e854, type: 3}
 --- !u!114 &1733958141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7101,9 +7102,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7ed62d55b95cf2e4a9ca21c2c362c962, type: 2}
   catSatisfied: 0
   catPlumbob: {fileID: 1715064146}
-  happyPlumbob: {fileID: 8692152049258753946, guid: 10e6e413920574c478bd2fc0edf9bd90, type: 3}
-  neutralPlumbob: {fileID: 1107951988898541095, guid: 26c11554c200cca4ea3cc6e64cc92284, type: 3}
-  unhappyPlumbob: {fileID: -5299824590308755832, guid: 40331a47ae2e4cf4ab3e37701920a910, type: 3}
+  happyPlumbob: {fileID: -6168765445412597301, guid: 28b80bfb21578de48a0dc920fcfcd9c9, type: 3}
+  neutralPlumbob: {fileID: -8720468007143068442, guid: d9cdec59e36ca7140bd20cd930e33a10, type: 3}
+  unhappyPlumbob: {fileID: 2381706216346028013, guid: 23a35848eddc375469741b68f5e6e854, type: 3}
 --- !u!114 &1855582380
 MonoBehaviour:
   m_ObjectHideFlags: 0
