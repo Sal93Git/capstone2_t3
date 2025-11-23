@@ -23,6 +23,9 @@ public class GameManager : MonoBehaviour
 
     public bool isHoldingCat = false;
 
+    public AudioSource soundSource;
+
+    public GameObject pauseMenu;
     void Start()
     {
         // Disable all cat like icons and clear text at scene start
@@ -166,4 +169,36 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void PlayCatSound()
+    {
+        if (soundSource != null)
+        {
+            soundSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning("No AudioSource assigned!");
+        }
+    }
+
+    public void togglePause()
+    {
+        pauseMenu.SetActive(!pauseMenu.activeSelf);
+        if(Time.timeScale == 0f)
+        {
+            Time.timeScale = 1f;
+        }
+        else if(Time.timeScale == 1f)
+        {
+            Time.timeScale = 0f;
+        }
+    }
+
+    public void returnToMainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(0);
+    }
+
 }
