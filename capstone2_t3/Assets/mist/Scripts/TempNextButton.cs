@@ -9,9 +9,9 @@ public class TempNextButton : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void NextLevel()
+    public void NextLevel(int index)
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(index);
         Debug.Log("nextlevel clicked");
     }
 }

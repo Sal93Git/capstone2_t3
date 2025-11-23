@@ -17,6 +17,8 @@ public class CatDragAndDrop : MonoBehaviour
 
     public CatType catType;
 
+    public ColorStrobe[] grounds;
+
     void Start()
     {
         catHappinessRef = GetComponent<CatHappiness>();
@@ -46,6 +48,12 @@ public class CatDragAndDrop : MonoBehaviour
                 {
                     dragging = true;
                     startDragPosition = transform.position;
+
+                    gameManagerRef.PlayCatSound();
+                    foreach(ColorStrobe g in grounds)
+                    {
+                        g.isStrobing = true;
+                    }
 
                     Debug.Log("Picked up cat: " + this.gameObject.name);
 
@@ -86,12 +94,17 @@ public class CatDragAndDrop : MonoBehaviour
             gameManagerRef.isHoldingCat = false;
             dragging = false;
             anim.SetBool("isHeld", false); //set bool in animator
+            foreach(ColorStrobe g in grounds)
+            {
+                g.isStrobing = false;
+            }
             int dropAreaLayer = LayerMask.GetMask("DropArea");
             Collider2D hitCollider = Physics2D.OverlapPoint(mousePos, dropAreaLayer);
 
             if (hitCollider != null && hitCollider.TryGetComponent(out ICatDropArea catDropArea))
             {
                 catDropArea.OnCatDrop(this, mousePos);
+                gameManagerRef.PlayCatSound();
                 // this.gameObject.tag = "Cat"; // Successfully placed
                 this.gameObject.tag = catType.ToString();
                 // catHappinessRef.catPlumbob.SetActive(true);

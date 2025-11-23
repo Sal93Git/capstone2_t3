@@ -16,6 +16,11 @@ TagManager:
   - Noise
   - Toy
   - draggingCat
+  - Light
+  - Comfort
+  - Thrills
+  - HidingSpot
+  - HighPlace
   layers:
   - Default
   - TransparentFX
